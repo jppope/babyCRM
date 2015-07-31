@@ -4,7 +4,7 @@ StormCloud babyCRM
 
 
 #### Screenshot
-![Screenshot software](http://thestormcloudgroup.com/git_images/babycrm.png"screenshot software")
+![Screenshot software](http://thestormcloudgroup.com/git_images/babycrm.png "screenshot software")
 
 ## Download
 * [Version X.Y](https://github.com/username/sw-name/archive/master.zip)
