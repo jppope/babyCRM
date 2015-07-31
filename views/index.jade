@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    a(href='http://thestormcloudgroup.com')
+        i.fa.fa-bars.fa-2x.right
+    h1(class=['text-center', 'main-title']) Storm Cloud babyCRM!
+
+    div(class=['large-4','columns'])
+        .col-header-opp
+            a(href='/opp')
+                i.fa.fa-plus-circle.white.right
+            h3(class=['white']) Opportunites
+        div(class=['opps'])
+            p example
+    div(class=['large-4','columns'])
+        .col-header-disc
+            h3(class=['white']) Working
+        div(class=['disc'])
+            p example
+    div(class=['large-4','columns'])
+        .col-header-solution
+            h3(class=['white']) Compeleted
+        div(class=['solution'])
+            p example
+
+

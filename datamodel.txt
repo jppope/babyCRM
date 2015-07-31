@@ -1,0 +1,28 @@
+db.babycrmone.insert({"fullName":"Sacha Rose","company":"Hardcore Tutoring","url":"http://cnn.com","phone":9492333122,"email":"none@none.com","Address":"208 technology dr Irvine CA","Zip": 92630,"referralSource":"adwords","Make":"Samsung","Model":"s4","Carrier":"tmobile","problem":"Water Damage","notes": "foo bar","price": 50,"upsellItem":"screen cover","upsellAmount": 10,"status": 2})
+
+db.babycrmone.insert({
+	
+"fullName":"Jon Paul Uritis",
+"company":"StormCloud",
+"url":"http://thestormcloudgroup.com",
+"phone":2155121088,
+"email":"jonpaul.act@none.com",
+"Address":"1600 pennsylvania ave",
+"Zip": 20050,
+"referralSource":"adwords",
+"Make":"htc",
+"Model":"one",
+"Carrier":"verizon",
+"problem":"cracked screen",
+"notes": "foo bar",
+"price": 50,
+"upsellItem":"screen cover",
+"upsellAmount": 10,"status": 1
+
+})
+
+
+
+db.babycrmone.remove({})
+
+db.babycrmone.insert({"_id":"55b81901ef0d0ba3b7d81724","fullName":"Shervin Hoss","company":"Smartphone Repair","url":"http://fixbrokenphone.com","phone":9492333122,"email":"shervin@fixbrokenphone.com","Address":"208 technology dr Irvine CA","Zip":92630,"referralSource":"adwords","Make":"Samsung","Model":"s4","Carrier":"tmobile","problem":"Water Damage","notes":"foo bar","price":50,"upsellItem":"screen cover","upsellAmount":10,"status":2})
