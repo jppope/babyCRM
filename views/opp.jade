@@ -14,41 +14,46 @@ block content
         #contact-info
             .col-header-engagement
                 h2.white Contact Info
-            fieldset
-                input#inputfullName(type='text', placeholder='Full Name')
-                input#inputcompany(type='text', placeholder='Company (we offer Corporate Discounts Sometimes')
-                input#inputurl(type="url", placeholder='Company Website')
-                input#inputphone(type='text', placeholder='phoneNumber (numbers only please)')
-                input#inputEmail(type="email", placeholder='Email')
-                input#inputAddress(type='text', placeholder='Address')
-                input#inputZip(type='text', placeholder='Zip Code')
+            .cardsmall
+                fieldset
+                    input#inputfullName(type='text', placeholder='Full Name')
+                    input#inputcompany(type='text', placeholder='Company (we offer Corporate Discounts Sometimes')
+                    input#inputurl(type="url", placeholder='Company Website')
+                    input#inputphone(type='text', placeholder='phoneNumber (numbers only please)')
+                    input#inputEmail(type="email", placeholder='Email')
+                    input#inputAddress(type='text', placeholder='Address')
+                    input#inputZip(type='text', placeholder='Zip Code')
 
     div(class=['large-4','columns'])
         #device-info
             .col-header-solution
                 h2.white Device Info
-            fieldset
-                select#inputSource
-                    each source, i in sources
-                        option(value=i) #{source}
-                select#inputManufacturer
-                    each make, i in manufacturer
-                        option(value=i) #{make}
-                select#inputKind
-                    each model, i in kind
-                        option(value=i) #{model}
-                select#inputCompany
-                    each carrier, i in company
-                        option(value=i) #{carrier}
-                select#inputProblem
-                    each issue, i in problem
-                        option(value=i) #{issue}
-                p.small Anything Else that might be important?
-                textarea#inputNotes(name="notes")
-                input#inputPrice(type="hidden", value="50")
-                input#inputNotes(type="hidden", value="upsellItem")
-                input#inputNotes(type="hidden", value="0")
-                button#btnAddUser Submit
+            .cardsmall
+                fieldset
+                    select#inputSource
+                        each source, i in sources
+                            option(value=i) #{source}
+                    select#inputManufacturer
+                        each make, i in manufacturer
+                            option(value=i) #{make}
+                    select#inputKind
+                        each model, i in kind
+                            option(value=i) #{model}
+                    select#inputCompany
+                        each carrier, i in company
+                            option(value=i) #{carrier}
+                    select#inputProblem
+                        each issue, i in problem
+                            option(value=i) #{issue}
+                    p.small Anything Else that might be important?
+                    textarea#inputNotes(name="notes")
+                    input#inputPrice(type="hidden", value="50")
+                    input#inputNotes(type="hidden", value="upsellItem")
+                    input#inputNotes(type="hidden", value="0")
+                    button#btnAddUser Submit
+    .bottomspace
+
+
 
 
 

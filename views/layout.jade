@@ -6,9 +6,58 @@ html
         link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
         link(rel='stylesheet', href='/stylesheets/style.css')
     body
-        block content
-        script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
-        script(src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js')
+        #container
+                #canvas
+                    #nav
+                        h2#title
+                            i.fa.fa-sitemap
+                            |  StormCloud
+                            |  Baby CRM
+                        ul#toggle
+                            li
+                                .active.border
+                                    span.menu-icons.fa.fa-home
+                                    a(href='/') HOME
+                            //li
+                                div
+                                    span.menu-icons.fa.fa-user
+                                    a(href='#') New Customer
+                                    span.the-btn.fa.fa-plus
+                                ul
+                                    li
+                                        a(href='#') OUR TEAM
+                                    li
+                                        a(href='#') OUR SERVICES
+                            //li
+                                div
+                                    span.menu-icons.fa.fa-briefcase
+                                    a(href='#') PORTFOLIO
+                                    span.the-btn.fa.fa-plus
+                                ul
+                                    li
+                                        a(href='#') WEB DESIGN
+                                    li
+                                        a(href='#') GRAPHIC DESIGN
+                            li
+                                div
+                                    span.menu-icons.fa.fa-plus-circle
+                                    a(href='/opp') New Customer
+                            li
+                                div
+                                    span.menu-icons.fa.fa-users
+                                    a(href='/custydata') Customer data
+                            li
+                                div
+                                    span.menu-icons.fa.fa-envelope
+                                    a(href='#') CONTACT
+                    a#bars.toggle-nav(href='#')
+                        i.fa.fa-bars
+                    block content
+
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/vendor/jquery.js')
         script(src='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js')
+        script(src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js')
+        script(src='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.offcanvas.js')
         script(src='http://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation/foundation.reveal.min.js')
         script(src='/javascripts/global.js')
+

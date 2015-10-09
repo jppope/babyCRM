@@ -25,6 +25,11 @@ router.get('/opp', function(req, res) {
 	});
 });
 
+router.get('/custydata', function(req, res) {
+	res.render('custydata', {
+		title: 'Current Customers',
+	});
+});
 
 
 

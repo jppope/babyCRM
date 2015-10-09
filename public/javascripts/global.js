@@ -5,8 +5,8 @@ var userListData = [];
 // DOM Ready =============================================================
 $(document).ready(function() {
     populateTable();    
-    //populateCustyList();
-    //addNavManu();
+    populateCustyList();
+    addNavManu();
 	$('#btnAddUser').on('click', addUser);	
 	//$("a.delete-custy").on("click","a.delete-custy",deleteCusty)
 	//$('a.delete-custy').on('click', addUser);
@@ -44,10 +44,8 @@ function populateTable() {
 * Add a user
 ***********************************/
 
-function addUser(event) {
-	alert( event.isDefaultPrevented() ); // false
+function addUser(event) {	
 	event.preventDefault();
-	alert( event.isDefaultPrevented() );
 	// Super basic validation - increase errorCount variable if any fields are blank
 	var errorCount = 0;
 	$('contact-info input').each(function(index, val) {
